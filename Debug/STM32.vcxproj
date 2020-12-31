@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{97A19FDA-1524-447F-983C-1F9092E6DC01}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_exti.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_exti.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash_ex.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash_ex.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hsem.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hsem.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c_ex.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c_ex.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mdma.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mdma.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.d" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.su" />
+    <None Include="Drivers\STM32H7xx_HAL_Driver\Src\subdir.mk" />
+    <None Include="STM32H7A3_START.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.o" />
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.o" />
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.o" />
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.o" />
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_exti.o" />
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash.o" />
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash_ex.o" />
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.o" />
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hsem.o" />
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c.o" />
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c_ex.o" />
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mdma.o" />
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.o" />
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.o" />
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.o" />
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.o" />
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.o" />
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.o" />
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.o" />
+    <Object Include="Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.o" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
