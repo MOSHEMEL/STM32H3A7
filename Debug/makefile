@@ -58,8 +58,8 @@ all: main-build
 main-build: STM32H7A3_START.elf secondary-outputs
 
 # Tool invocations
-STM32H7A3_START.elf: $(OBJS) $(USER_OBJS) C:\Users\Moshe\source\repos\STM32H7A3_START\STM32H7A3ZITXQ_FLASH.ld
-	arm-none-eabi-gcc -o "STM32H7A3_START.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\Moshe\source\repos\STM32H7A3_START\STM32H7A3ZITXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32H7A3_START.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+STM32H7A3_START.elf: $(OBJS) $(USER_OBJS) C:\Users\Moshe\Documents\GitHub\STM32H3A7\STM32H7A3ZITXQ_FLASH.ld
+	arm-none-eabi-gcc -o "STM32H7A3_START.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\Moshe\Documents\GitHub\STM32H3A7\STM32H7A3ZITXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32H7A3_START.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
